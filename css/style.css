@@ -92,23 +92,23 @@ header {
     text-align: center;
 }
 
-header .user img {
-    height: 17rem;
-    width:17rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom:1rem;
-    border:.7rem solid var(--yellow);
+header .user {
+    margin-bottom: 4rem;
 }
 
-header .user .name {
-    font-size: 3.5rem;
+header .user .surname {
+    font-size: 4.5rem;
     color:#fff
 }
 
+header .user .name {
+    font-size: 4.5rem;
+    color: var(--yellow);
+}
+
 header .user .post {
-    font-size: 2rem;
-    color: #eee
+    font-size: 2.5rem;
+    color: #eee;
 }
 
 header .navbar {
