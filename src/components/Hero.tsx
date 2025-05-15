@@ -1,7 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, Code } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import ThreeDAvatar from './ThreeDAvatar';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,7 +14,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen pt-20 flex flex-col justify-center relative overflow-hidden">
       <div className="section-container">
         <div className="flex flex-col items-center text-center">
-          {/* 3D Avatar */}
+          {/* 3D Image or Avatar */}
           <div 
             className={cn(
               "mb-8 opacity-0",
@@ -22,8 +22,12 @@ const Hero = () => {
             )}
             style={{ animationDelay: '0.2s' }}
           >
-            <div className="relative w-36 h-36 md:w-48 md:h-48 mx-auto glass rounded-full overflow-hidden">
-              <ThreeDAvatar />
+            <div className="relative w-36 h-36 md:w-48 md:h-48 mx-auto glass p-1 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
+                alt="Flutter Developer"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
           </div>
           
