@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Code } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
@@ -11,63 +11,77 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-flutter-lightBlue opacity-50 blur-3xl"></div>
-      <div className="absolute bottom-12 -left-24 w-64 h-64 rounded-full bg-flutter-lightBlue opacity-50 blur-3xl"></div>
-
-      <div className="section-container flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 z-10">
-          <h1 
+    <section id="home" className="min-h-screen pt-20 flex flex-col justify-center relative overflow-hidden">
+      <div className="section-container">
+        <div className="flex flex-col items-center text-center">
+          {/* 3D Image or Avatar */}
+          <div 
             className={cn(
-              "text-4xl md:text-5xl lg:text-6xl font-bold mb-4 opacity-0",
+              "mb-8 opacity-0",
               isLoaded && "animate-fade-in"
             )}
             style={{ animationDelay: '0.2s' }}
           >
-            Hello, I'm a <span className="text-flutter-blue">Flutter</span> Developer
-          </h1>
-          
-          <p 
-            className={cn(
-              "text-lg md:text-xl mb-8 max-w-md opacity-0", 
-              isLoaded && "animate-fade-in"
-            )}
-            style={{ animationDelay: '0.4s' }}
-          >
-            Building beautiful cross-platform mobile applications with Flutter and Dart
-          </p>
-          
-          <div 
-            className={cn("opacity-0", isLoaded && "animate-fade-in")}
-            style={{ animationDelay: '0.6s' }}
-          >
-            <a 
-              href="#works" 
-              className="inline-flex items-center gap-2 bg-flutter-blue text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors"
-            >
-              View My Work <ArrowRight size={16} />
-            </a>
+            <div className="relative w-36 h-36 md:w-48 md:h-48 mx-auto glass p-1 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
+                alt="Flutter Developer"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
           </div>
-        </div>
-        
-        <div 
-          className={cn(
-            "md:w-1/2 mt-12 md:mt-0 relative opacity-0",
-            isLoaded && "animate-fade-in"
-          )}
-          style={{ animationDelay: '0.8s' }}
-        >
-          <div className="relative w-64 h-64 mx-auto">
-            <div className="absolute inset-0 rounded-full bg-flutter-lightBlue"></div>
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
-              alt="Flutter Developer"
-              className="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white"
-            />
+          
+          {/* Hero Text */}
+          <div className="z-10">
+            <div 
+              className={cn(
+                "p-2 px-4 rounded-full bg-accent/50 inline-flex items-center gap-2 mb-4 opacity-0",
+                isLoaded && "animate-fade-in"
+              )}
+              style={{ animationDelay: '0.4s' }}
+            >
+              <Code size={14} />
+              <span className="text-sm">Hello, I'm a Flutter developer</span>
+            </div>
+            
+            <h1 
+              className={cn(
+                "text-3xl md:text-5xl lg:text-5xl font-bold mb-4 opacity-0",
+                isLoaded && "animate-fade-in"
+              )}
+              style={{ animationDelay: '0.6s' }}
+            >
+              Building beautiful <span className="text-flutter-blue dark:text-flutter-lightBlue">mobile experiences</span>
+            </h1>
+            
+            <p 
+              className={cn(
+                "text-muted-foreground mb-8 max-w-lg mx-auto opacity-0", 
+                isLoaded && "animate-fade-in"
+              )}
+              style={{ animationDelay: '0.8s' }}
+            >
+              A passionate Flutter developer creating seamless cross-platform applications with elegant UI and smooth animations
+            </p>
+            
+            <div 
+              className={cn("opacity-0 flex justify-center gap-4", isLoaded && "animate-fade-in")}
+              style={{ animationDelay: '1s' }}
+            >
+              <a 
+                href="#works" 
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
+              >
+                View My Work <ArrowRight size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+      
+      {/* Background elements */}
+      <div className="absolute top-1/4 left-0 w-64 h-64 rounded-full bg-flutter-blue/5 dark:bg-flutter-lightBlue/5 blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-0 w-64 h-64 rounded-full bg-flutter-blue/5 dark:bg-flutter-lightBlue/5 blur-3xl"></div>
     </section>
   );
 };

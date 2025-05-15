@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -36,37 +37,43 @@ const Navbar = () => {
     <nav 
       className={cn(
         'fixed top-0 left-0 w-full z-50 transition-all duration-300',
-        isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        isScrolled 
+          ? 'dark:bg-theme-dark/80 bg-theme-light/80 backdrop-blur-md shadow-sm' 
+          : 'bg-transparent'
       )}
     >
-      <div className="container max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="font-bold text-xl">
-          <span className="text-flutter-blue">Flutter</span>Dev
+          <span className="text-flutter-blue dark:text-flutter-lightBlue">Flutter</span>Dev
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <a key={link.name} href={link.href} className="nav-link">
               {link.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile Navigation Toggle */}
-        <button 
-          className="md:hidden text-gray-700 focus:outline-none" 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center md:hidden space-x-4">
+          <ThemeToggle />
+          <button 
+            className="text-foreground focus:outline-none" 
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       <div 
         className={cn(
-          'md:hidden fixed inset-0 bg-white z-40 transition-transform duration-300 ease-in-out',
+          'md:hidden fixed inset-0 dark:bg-theme-dark bg-theme-light z-40 transition-transform duration-300 ease-in-out',
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
@@ -75,7 +82,7 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-xl font-medium hover:text-flutter-blue"
+              className="text-xl font-medium hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}

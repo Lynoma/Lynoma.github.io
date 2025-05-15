@@ -61,18 +61,21 @@ const Works = () => {
     <section id="works" className="py-20">
       <div className="section-container">
         <h2 className="heading">My Works</h2>
-        <p className="text-gray-600 mb-12 max-w-2xl">
+        <p className="text-muted-foreground mb-10">
           A selection of my recent Flutter projects. Each represents different 
           challenges and solutions in mobile development.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
+        <div className="grid grid-cols-1 gap-8">
+          {projects.map((project, index) => (
             <div 
               key={project.id}
-              className="work-card flex flex-col"
+              className={cn(
+                "work-card flex flex-col md:flex-row",
+                index % 2 === 1 && "md:flex-row-reverse"
+              )}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="md:w-1/2 h-48 md:h-auto overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
@@ -80,11 +83,11 @@ const Works = () => {
                 />
               </div>
               
-              <div className="p-6 flex-1 flex flex-col">
+              <div className="md:w-1/2 p-6 flex flex-col">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 
                 <p className={cn(
-                  "text-gray-600 text-sm mb-4",
+                  "text-muted-foreground text-sm mb-4",
                   expandedId === project.id ? "" : "line-clamp-2"
                 )}>
                   {project.description}
@@ -92,7 +95,7 @@ const Works = () => {
                 
                 {expandedId !== project.id && (
                   <button 
-                    className="text-flutter-blue text-sm mb-4 hover:underline"
+                    className="text-flutter-blue dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
                     onClick={() => toggleExpanded(project.id)}
                   >
                     Read more
@@ -101,7 +104,7 @@ const Works = () => {
                 
                 {expandedId === project.id && (
                   <button 
-                    className="text-flutter-blue text-sm mb-4 hover:underline"
+                    className="text-flutter-blue dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
                     onClick={() => toggleExpanded(project.id)}
                   >
                     Show less
@@ -112,7 +115,7 @@ const Works = () => {
                   {project.tags.map((tag) => (
                     <span 
                       key={tag} 
-                      className="text-xs bg-flutter-lightBlue text-flutter-blue rounded-full px-3 py-1"
+                      className="text-xs bg-accent px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
@@ -125,7 +128,7 @@ const Works = () => {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm hover:text-flutter-blue transition-colors"
+                      className="flex items-center gap-1 text-sm hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
                     >
                       <ExternalLink size={16} /> Live Demo
                     </a>
@@ -136,7 +139,7 @@ const Works = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm hover:text-flutter-blue transition-colors"
+                      className="flex items-center gap-1 text-sm hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
                     >
                       <Github size={16} /> Source Code
                     </a>

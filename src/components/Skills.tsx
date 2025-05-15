@@ -51,23 +51,23 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-flutter-dark text-white">
+    <section id="skills" className="py-20 bg-accent/30">
       <div className="section-container">
-        <h2 className="heading text-white after:bg-white">Skills & Technologies</h2>
-        <p className="text-gray-300 mb-12 max-w-2xl">
+        <h2 className="heading">Skills & Technologies</h2>
+        <p className="text-muted-foreground mb-10">
           I've developed expertise in a variety of technologies and tools throughout my journey as a Flutter developer.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category) => (
-            <div key={category.title} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-4 text-flutter-lightBlue">{category.title}</h3>
+            <div key={category.title} className="glass p-6 h-full">
+              <h3 className="text-lg font-bold mb-4 text-flutter-blue dark:text-flutter-lightBlue">{category.title}</h3>
               
               <ul className="space-y-3">
                 {category.skills.map((skill) => (
                   <li key={skill} className="flex items-start gap-2">
-                    <CheckCircle className="text-flutter-lightBlue mt-0.5 shrink-0" size={18} />
-                    <span>{skill}</span>
+                    <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue mt-0.5 shrink-0" size={16} />
+                    <span className="text-sm">{skill}</span>
                   </li>
                 ))}
               </ul>
