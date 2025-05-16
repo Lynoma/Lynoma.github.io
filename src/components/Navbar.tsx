@@ -45,9 +45,14 @@ const Navbar = () => {
       <div className="container max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="font-bold text-xl flex items-center">
           <img 
-            src="/lovable-uploads/79f594c4-cdbd-47be-9ebe-3fcd526d4fa2.png" 
+            src="/lovable-uploads/3842f2a8-a73c-46ca-88ee-371e859b37ba.png" 
             alt="Flutter logo" 
-            className="w-6 h-6 mr-2 transition-transform duration-300 hover:rotate-[20deg]" 
+            className="w-6 h-6 mr-2 transition-transform duration-300 hover:rotate-[20deg] dark:hidden" 
+          />
+          <img 
+            src="/lovable-uploads/cf69bf1a-2edb-46c6-a4d0-0747eb684ccf.png" 
+            alt="Flutter logo" 
+            className="w-6 h-6 mr-2 transition-transform duration-300 hover:rotate-[20deg] hidden dark:block" 
           />
           <span className="text-flutter-blue dark:text-flutter-lightBlue">Flutter</span>Dev
         </a>
