@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircle, Code, FileCode, Database } from 'lucide-react';
+import { CheckCircle, Code, FileCode, Database, Smartphone, AppWindow } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -13,7 +13,7 @@ const skillCategories = [
       'Custom Animations',
       'Performance Optimization',
     ],
-    icon: <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+    icon: <AppWindow className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
     title: 'Angular',
@@ -49,7 +49,7 @@ const skillCategories = [
       'Mobile UX Patterns',
       'Offline-First Architecture',
     ],
-    icon: <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+    icon: <Smartphone className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
     title: 'Backend Integration',
