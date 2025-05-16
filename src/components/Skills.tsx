@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Code, FileCode, Database, Smartphone, AppWindow } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -13,6 +13,31 @@ const skillCategories = [
       'Custom Animations',
       'Performance Optimization',
     ],
+    icon: <AppWindow className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+  },
+  {
+    title: 'Angular',
+    skills: [
+      'Angular Framework',
+      'TypeScript',
+      'RxJS',
+      'Component Architecture',
+      'Angular Material',
+      'State Management (NgRx)',
+    ],
+    icon: <Code className="text-red-500 dark:text-red-400 shrink-0" size={20} />,
+  },
+  {
+    title: 'C#',
+    skills: [
+      '.NET Framework',
+      'ASP.NET Core',
+      'Entity Framework',
+      'LINQ',
+      'Dependency Injection',
+      'Microservices',
+    ],
+    icon: <FileCode className="text-purple-600 dark:text-purple-400 shrink-0" size={20} />,
   },
   {
     title: 'Mobile Development',
@@ -24,6 +49,7 @@ const skillCategories = [
       'Mobile UX Patterns',
       'Offline-First Architecture',
     ],
+    icon: <Smartphone className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
     title: 'Backend Integration',
@@ -35,6 +61,7 @@ const skillCategories = [
       'Cloud Functions',
       'Database Design',
     ],
+    icon: <Database className="text-green-500 dark:text-green-400 shrink-0" size={20} />,
   },
   {
     title: 'Tools & Others',
@@ -46,6 +73,7 @@ const skillCategories = [
       'Agile Methodologies',
       'Technical Documentation',
     ],
+    icon: <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
 ];
 
@@ -55,13 +83,16 @@ const Skills = () => {
       <div className="section-container">
         <h2 className="heading">Skills & Technologies</h2>
         <p className="text-muted-foreground mb-10">
-          I've developed expertise in a variety of technologies and tools throughout my journey as a Flutter developer.
+          I've developed expertise in a variety of technologies and tools throughout my journey as a developer.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => (
             <div key={category.title} className="glass p-6 h-full">
-              <h3 className="text-lg font-bold mb-4 text-flutter-blue dark:text-flutter-lightBlue">{category.title}</h3>
+              <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-flutter-blue dark:text-flutter-lightBlue">
+                {category.icon}
+                {category.title}
+              </h3>
               
               <ul className="space-y-3">
                 {category.skills.map((skill) => (
