@@ -15,13 +15,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 'flutter-chat',
-    title: 'FlutterChat',
-    description: 'A real-time messaging app built with Flutter and Firebase. Features include user authentication, message encryption, and offline support.',
-    image: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=800&auto=format&fit=crop',
-    tags: ['Flutter', 'Firebase', 'State Management'],
+    id: 'site-naturopathe',
+    title: 'Site Vitrine Naturopathe',
+    description: "Un simple site vitrine pour une naturopathe, avec un design épuré, une navigation fluide et l'affichage de son blog directement sur le site.",
+    image: '../../imgs/naturopathe.png',
+    tags: ['Flutter', 'API', 'Responsive Design'],
     liveLink: 'https://example.com',
-    githubLink: 'https://github.com'
   },
   {
     id: 'fitness-tracker',
@@ -60,10 +59,10 @@ const Works = () => {
   return (
     <section id="works" className="py-20">
       <div className="section-container">
-        <h2 className="heading">My Works</h2>
+        <h2 className="heading">Mes Projets</h2>
         <p className="text-muted-foreground mb-10">
-          A selection of my recent Flutter projects. Each represents different 
-          challenges and solutions in mobile development.
+          Voici quelques-uns de mes projets récents. Cliquez sur les images pour
+          voir plus de détails.
         </p>
 
         <div className="grid grid-cols-1 gap-8">
@@ -98,7 +97,7 @@ const Works = () => {
                     className="text-flutter-blue dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
                     onClick={() => toggleExpanded(project.id)}
                   >
-                    Read more
+                    Voir plus
                   </button>
                 )}
                 

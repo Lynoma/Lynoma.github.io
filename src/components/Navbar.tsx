@@ -27,9 +27,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Works', href: '#works' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'A propos', href: '#about' },
+    { name: 'Projets', href: '#works' },
+    { name: 'Compétences', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -44,7 +44,7 @@ const Navbar = () => {
     >
       <div className="container max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="font-bold text-xl">
-          <span className="text-flutter-blue dark:text-flutter-lightBlue">Flutter</span>Dev
+          <span className="text-flutter-blue dark:text-flutter-lightBlue">Dylan</span> Jacquet
         </a>
 
         {/* Desktop Navigation */}

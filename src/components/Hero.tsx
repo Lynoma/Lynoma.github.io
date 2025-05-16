@@ -41,7 +41,7 @@ const Hero = () => {
               style={{ animationDelay: '0.4s' }}
             >
               <Code size={14} />
-              <span className="text-sm">Hello, I'm a Flutter developer</span>
+              <span className="text-sm">Hello, je suis un développeur spécialisé en Flutter</span>
             </div>
             
             <h1 
@@ -51,7 +51,7 @@ const Hero = () => {
               )}
               style={{ animationDelay: '0.6s' }}
             >
-              Building beautiful <span className="text-flutter-blue dark:text-flutter-lightBlue">mobile experiences</span>
+              Dylan <span className="text-flutter-blue dark:text-flutter-lightBlue">Jacquet</span>
             </h1>
             
             <p 
@@ -61,7 +61,7 @@ const Hero = () => {
               )}
               style={{ animationDelay: '0.8s' }}
             >
-              A passionate Flutter developer creating seamless cross-platform applications with elegant UI and smooth animations
+              Un développeur Flutter passionné par la création d'applications mobiles et web. Je suis ici pour transformer vos idées en réalité numérique.
             </p>
             
             <div 
@@ -72,7 +72,7 @@ const Hero = () => {
                 href="#works" 
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
               >
-                View My Work <ArrowRight size={16} />
+                Voir mes projets <ArrowRight size={16} />
               </a>
             </div>
           </div>
