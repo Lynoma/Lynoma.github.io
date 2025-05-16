@@ -43,7 +43,12 @@ const Navbar = () => {
       )}
     >
       <div className="container max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="font-bold text-xl">
+        <a href="#home" className="font-bold text-xl flex items-center">
+          <img 
+            src="/lovable-uploads/79f594c4-cdbd-47be-9ebe-3fcd526d4fa2.png" 
+            alt="Flutter logo" 
+            className="w-6 h-6 mr-2 transition-transform duration-300 hover:rotate-[20deg]" 
+          />
           <span className="text-flutter-blue dark:text-flutter-lightBlue">Flutter</span>Dev
         </a>
 
