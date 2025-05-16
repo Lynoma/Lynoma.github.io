@@ -72,9 +72,9 @@ const Bio = () => {
             <div className="flex items-start gap-4 p-4 glass">
               <Calendar className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
               <div>
-                <h3 className="font-semibold">Experience</h3>
+                <h3 className="font-semibold">Expérience</h3>
                 <p className="text-sm text-muted-foreground">
-                  5+ Years with Flutter
+                  3+ Years with Flutter
                 </p>
               </div>
             </div>
@@ -82,9 +82,9 @@ const Bio = () => {
             <div className="flex items-start gap-4 p-4 glass">
               <MapPin className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
               <div>
-                <h3 className="font-semibold">Location</h3>
+                <h3 className="font-semibold">Localisation</h3>
                 <p className="text-sm text-muted-foreground">
-                  San Francisco, CA
+                  Chalon-sur-Saône, France
                 </p>
               </div>
             </div>
@@ -92,9 +92,9 @@ const Bio = () => {
             <div className="flex items-start gap-4 p-4 glass">
               <Award className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
               <div>
-                <h3 className="font-semibold">Specialization</h3>
+                <h3 className="font-semibold">Spécialisation</h3>
                 <p className="text-sm text-muted-foreground">
-                  Mobile App Development
+                  Applications Mobiles Flutter
                 </p>
               </div>
             </div>

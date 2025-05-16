@@ -23,29 +23,29 @@ const projects: Project[] = [
     liveLink: 'https://example.com',
   },
   {
-    id: 'fitness-tracker',
-    title: 'Fitness Tracker',
-    description: 'A comprehensive fitness tracking application with custom animations, workout planning, and health metrics visualization.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop',
-    tags: ['Flutter', 'Animation', 'Health Kit'],
-    liveLink: 'https://example.com'
+    id: 'import-ecommerce',
+    title: 'Script d\'importation de produits pour E-commerce',
+    description: 'Un script permettant d\'importer des produits depuis différents fichiers CSV vers une plateforme e-commerce, avec gestion des erreurs, comparaison des prix, mise à jour des stocks dans la base de données et supression des produits erronés.',
+    image: 'https://images.unsplash.com/photo-1560472354-0088b5dc9d8d?w=800&auto=format&fit=crop',
+    tags: ['PHP', 'CRON', 'Backend'],
+    githubLink: 'https://github.com/Lynoma/Prestashop-Scripts',
   },
   {
-    id: 'ecommerce-app',
-    title: 'Flutter Store',
-    description: 'A cross-platform e-commerce application with product catalog, cart management, payment integration, and order tracking.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&auto=format&fit=crop',
-    tags: ['Flutter', 'State Management', 'Payment Gateway'],
-    githubLink: 'https://github.com'
+    id: 'hunt-death-tracker',
+    title: 'Hunt Death Tracker',
+    description: 'Un site pour collecter des données sur les morts dans le jeu Hunt: Showdown, avec un design sombre et une navigation fluide.',
+    image: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/81c0dd50371957b26c5025de919faa038e89eaae/capsule_616x353.jpg?t=1746432020',
+    tags: ['Flutter', 'State Management', 'Firebase'],
+    githubLink: 'https://github.com/Lynoma/hunt_death_tracker',
+    liveLink: 'https://hunt-death-tracker.web.app/#/',
   },
   {
-    id: 'weather-app',
-    title: 'Weather App',
-    description: 'A beautifully animated weather application with location tracking, forecasting, and customizable UI themes.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop',
-    tags: ['Flutter', 'API Integration', 'Animation'],
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com'
+    id: 'Touchbar-soundpad',
+    title: 'Touchbar Soundpad',
+    description: 'Un soundpad pour le MacBook Pro 2016+ permettant de jouer des sons via la Touchbar. Ne vous inquiétez pas, les clés ont été révoquées.',
+    image: 'https://images.unsplash.com/photo-1609144324678-dff17a2d8892?w=800&auto=format&fit=crop',
+    tags: ['Flutter', 'Plugin', 'macOS'],
+    githubLink: 'https://github.com/Lynoma/touch_bar_soundpad'
   }
 ];
 

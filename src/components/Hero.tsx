@@ -24,7 +24,7 @@ const Hero = () => {
           >
             <div className="relative w-36 h-36 md:w-48 md:h-48 mx-auto glass p-1 rounded-full overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop"
+                src="../../imgs/picofme.png"
                 alt="Flutter Developer"
                 className="w-full h-full object-cover rounded-full"
               />

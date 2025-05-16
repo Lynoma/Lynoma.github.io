@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="py-8 text-center text-sm border-t">
       <div className="container mx-auto px-6">
         <p>
-          &copy; {currentYear} Flutter Developer Portfolio. All rights reserved.
+          &copy; {currentYear} Portfolio Dylan Jacquet. Tous droits réservés.
         </p>
         <p className="mt-2 text-muted-foreground">
           Designed with React & Tailwind CSS

@@ -9,9 +9,8 @@ const skillCategories = [
       'Flutter SDK',
       'Dart Programming',
       'State Management (Provider, Riverpod, Bloc)',
-      'UI/UX Implementation',
-      'Custom Animations',
-      'Performance Optimization',
+      'UI/UX',
+      'Optimisation des Performances',
     ],
     icon: <AppWindow className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
@@ -32,46 +31,43 @@ const skillCategories = [
     skills: [
       '.NET Framework',
       'ASP.NET Core',
-      'Entity Framework',
+      'WPF Framework',
       'LINQ',
-      'Dependency Injection',
-      'Microservices',
+      'MVVM Pattern',
+      'Xamarin',
     ],
     icon: <FileCode className="text-purple-600 dark:text-purple-400 shrink-0" size={20} />,
   },
   {
-    title: 'Mobile Development',
+    title: 'Développement Mobile',
     skills: [
-      'Cross-Platform Development',
-      'Responsive Design',
-      'Native Feature Integration',
-      'App Store Deployment',
-      'Mobile UX Patterns',
-      'Offline-First Architecture',
+      'Dévelopement Cross-Platform',
+      'Design Responsive',
+      'Intégration des features Native',
+      'Déploiement sur App Store & Play Store',
+      'UX mobile',
     ],
     icon: <Smartphone className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
-    title: 'Backend Integration',
+    title: 'Intégration Backend',
     skills: [
       'RESTful APIs',
-      'GraphQL',
       'Firebase',
-      'Authentication',
+      'Authentification',
       'Cloud Functions',
-      'Database Design',
+      'NoSQL Databases (Firestore)',
     ],
     icon: <Database className="text-green-500 dark:text-green-400 shrink-0" size={20} />,
   },
   {
-    title: 'Tools & Others',
+    title: 'Autre Outils',
     skills: [
       'Git & GitHub',
       'CI/CD Pipelines',
-      'Figma & Design Tools',
-      'App Testing',
-      'Agile Methodologies',
-      'Technical Documentation',
+      'Postman',
+      'Figma',
+      'Methodologies Agiles',
     ],
     icon: <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
@@ -81,9 +77,10 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-accent/30">
       <div className="section-container">
-        <h2 className="heading">Skills & Technologies</h2>
+        <h2 className="heading">Compétences & Technologies</h2>
         <p className="text-muted-foreground mb-10">
-          I've developed expertise in a variety of technologies and tools throughout my journey as a developer.
+          Voici un aperçu de mes compétences et des technologies avec lesquelles je
+          travaille régulièrement.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
