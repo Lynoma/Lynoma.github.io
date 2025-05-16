@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircle, Code, Angular, CSharp } from 'lucide-react';
+import { CheckCircle, Code, FileCode, Database } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -25,7 +25,7 @@ const skillCategories = [
       'Angular Material',
       'State Management (NgRx)',
     ],
-    icon: <Angular className="text-red-500 dark:text-red-400 shrink-0" size={20} />,
+    icon: <Code className="text-red-500 dark:text-red-400 shrink-0" size={20} />,
   },
   {
     title: 'C#',
@@ -37,7 +37,7 @@ const skillCategories = [
       'Dependency Injection',
       'Microservices',
     ],
-    icon: <CSharp className="text-purple-600 dark:text-purple-400 shrink-0" size={20} />,
+    icon: <FileCode className="text-purple-600 dark:text-purple-400 shrink-0" size={20} />,
   },
   {
     title: 'Mobile Development',
@@ -61,7 +61,7 @@ const skillCategories = [
       'Cloud Functions',
       'Database Design',
     ],
-    icon: <Code className="text-green-500 dark:text-green-400 shrink-0" size={20} />,
+    icon: <Database className="text-green-500 dark:text-green-400 shrink-0" size={20} />,
   },
   {
     title: 'Tools & Others',
