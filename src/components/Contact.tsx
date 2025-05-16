@@ -20,10 +20,10 @@ const Contact = () => {
             <div className="space-y-6">
               <a
                 href="mailto:hello@flutterdev.com"
-                className="flex items-center gap-3 text-foreground hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-flutter-orange dark:hover:text-flutter-lightBlue transition-colors"
               >
                 <Mail
-                  className="text-flutter-blue dark:text-flutter-lightBlue"
+                  className="text-flutter-orange dark:text-flutter-lightBlue"
                   size={20}
                 />
                 <span>j.dylan764@laposte.net</span>
@@ -36,7 +36,7 @@ const Contact = () => {
                     href="https://github.com/Lynoma"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-blue hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
+                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-orange hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
                   >
                     <Github size={18} />
                   </a>
@@ -45,7 +45,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/dylan-jacquet-3b028a263/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-blue hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
+                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-orange hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
                   >
                     <Linkedin size={18} />
                   </a>
@@ -54,7 +54,7 @@ const Contact = () => {
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-blue hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
+                    className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-flutter-orange hover:text-white dark:hover:bg-flutter-lightBlue dark:hover:text-black transition-colors"
                   >
                     <Twitter size={18} />
                   </a>
@@ -77,7 +77,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-blue dark:focus:ring-flutter-lightBlue focus:border-flutter-blue dark:focus:border-flutter-lightBlue"
+                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-orange dark:focus:ring-flutter-lightBlue focus:border-flutter-orange dark:focus:border-flutter-lightBlue"
                   placeholder="Votre nom"
                 />
               </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-blue dark:focus:ring-flutter-lightBlue focus:border-flutter-blue dark:focus:border-flutter-lightBlue"
+                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-orange dark:focus:ring-flutter-lightBlue focus:border-flutter-orange dark:focus:border-flutter-lightBlue"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -107,14 +107,14 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={4}
-                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-blue dark:focus:ring-flutter-lightBlue focus:border-flutter-blue dark:focus:border-flutter-lightBlue"
+                  className="w-full px-4 py-2 bg-background border rounded-lg focus:ring-1 focus:ring-flutter-orange dark:focus:ring-flutter-lightBlue focus:border-flutter-orange dark:focus:border-flutter-lightBlue"
                   placeholder="Your message here..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="bg-flutter-blue dark:bg-flutter-lightBlue text-white dark:text-black px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                className="bg-flutter-orange dark:bg-flutter-lightBlue text-white dark:text-black px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
               >
                 Envoyer
               </button>

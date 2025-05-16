@@ -12,7 +12,7 @@ const skillCategories = [
       'UI/UX',
       'Optimisation des Performances',
     ],
-    icon: <AppWindow className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+    icon: <AppWindow className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
     title: 'Angular',
@@ -47,7 +47,7 @@ const skillCategories = [
       'Déploiement sur App Store & Play Store',
       'UX mobile',
     ],
-    icon: <Smartphone className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+    icon: <Smartphone className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
   {
     title: 'Intégration Backend',
@@ -69,7 +69,7 @@ const skillCategories = [
       'Figma',
       'Methodologies Agiles',
     ],
-    icon: <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" size={20} />,
+    icon: <CheckCircle className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" size={20} />,
   },
 ];
 
@@ -86,7 +86,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => (
             <div key={category.title} className="glass p-6 h-full">
-              <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-flutter-blue dark:text-flutter-lightBlue">
+              <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-flutter-orange dark:text-flutter-lightBlue">
                 {category.icon}
                 {category.title}
               </h3>
@@ -94,7 +94,7 @@ const Skills = () => {
               <ul className="space-y-3">
                 {category.skills.map((skill) => (
                   <li key={skill} className="flex items-start gap-2">
-                    <CheckCircle className="text-flutter-blue dark:text-flutter-lightBlue mt-0.5 shrink-0" size={16} />
+                    <CheckCircle className="text-flutter-orange dark:text-flutter-lightBlue mt-0.5 shrink-0" size={16} />
                     <span className="text-sm">{skill}</span>
                   </li>
                 ))}

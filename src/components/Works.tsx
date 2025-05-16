@@ -94,7 +94,7 @@ const Works = () => {
                 
                 {expandedId !== project.id && (
                   <button 
-                    className="text-flutter-blue dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
+                    className="text-flutter-orange dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
                     onClick={() => toggleExpanded(project.id)}
                   >
                     Voir plus
@@ -103,7 +103,7 @@ const Works = () => {
                 
                 {expandedId === project.id && (
                   <button 
-                    className="text-flutter-blue dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
+                    className="text-flutter-orange dark:text-flutter-lightBlue text-sm mb-4 hover:underline"
                     onClick={() => toggleExpanded(project.id)}
                   >
                     Show less
@@ -127,7 +127,7 @@ const Works = () => {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
+                      className="flex items-center gap-1 text-sm hover:text-flutter-orange dark:hover:text-flutter-lightBlue transition-colors"
                     >
                       <ExternalLink size={16} /> Live Demo
                     </a>
@@ -138,7 +138,7 @@ const Works = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
+                      className="flex items-center gap-1 text-sm hover:text-flutter-orange dark:hover:text-flutter-lightBlue transition-colors"
                     >
                       <Github size={16} /> Source Code
                     </a>

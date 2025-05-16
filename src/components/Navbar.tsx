@@ -54,7 +54,7 @@ const Navbar = () => {
             alt="Flutter logo" 
             className="w-6 h-6 mr-2 transition-transform duration-300 group-hover:rotate-[20deg] hidden dark:block" 
           />
-          <span className="text-flutter-blue dark:text-flutter-lightBlue">Dylan</span>Jacquet
+          <span className="text-flutter-orange dark:text-flutter-lightBlue">Dylan</span>Jacquet
         </a>
 
         {/* Desktop Navigation */}
@@ -92,7 +92,7 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-xl font-medium hover:text-flutter-blue dark:hover:text-flutter-lightBlue transition-colors"
+              className="text-xl font-medium hover:text-flutter-orange dark:hover:text-flutter-lightBlue transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}

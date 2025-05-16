@@ -70,7 +70,7 @@ const Bio = () => {
 
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-4 p-4 glass">
-              <Calendar className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
+              <Calendar className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" />
               <div>
                 <h3 className="font-semibold">Expérience</h3>
                 <p className="text-sm text-muted-foreground">
@@ -80,7 +80,7 @@ const Bio = () => {
             </div>
 
             <div className="flex items-start gap-4 p-4 glass">
-              <MapPin className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
+              <MapPin className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" />
               <div>
                 <h3 className="font-semibold">Localisation</h3>
                 <p className="text-sm text-muted-foreground">
@@ -90,7 +90,7 @@ const Bio = () => {
             </div>
 
             <div className="flex items-start gap-4 p-4 glass">
-              <Award className="text-flutter-blue dark:text-flutter-lightBlue shrink-0" />
+              <Award className="text-flutter-orange dark:text-flutter-lightBlue shrink-0" />
               <div>
                 <h3 className="font-semibold">Spécialisation</h3>
                 <p className="text-sm text-muted-foreground">

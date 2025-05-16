@@ -64,7 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				flutter: {
-					blue: '#0468D7',
+					orange: '#E67F0D',
 					lightBlue: '#E7F0FF',
 					dark: '#1A1F2C',
 				},
